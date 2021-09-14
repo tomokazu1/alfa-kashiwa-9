@@ -242,6 +242,21 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE4解答入力セクション　ここまで -->
         
+        <!-- STAGE4クリア画面　ここから -->
+        <section v-if="clear['stage4']" v-bind:class="{isClear:clear['stage4']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：4　　　　クリア！</div>
+              <div class="clear-message__content">人形を並び替えると突然壁から音が！<br>
+                「か、隠し扉...？にしては小さいな...」<br>
+                扉をそっと開けてみると<br>
+                中には一つの箱が入っていた...</div>
+                <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage5'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE4クリア画面　ここまで -->
+        
       </div>
       <!-- STAGE4　ここまで -->
         
