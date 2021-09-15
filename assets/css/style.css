@@ -319,7 +319,7 @@ button {
   left: calc(50% - 95px);
   display: block;
   content: '';
-  background-color: #fff;
+  background-color: #626fa4;
   height: 2.6px;
   width: 190px;
 }
